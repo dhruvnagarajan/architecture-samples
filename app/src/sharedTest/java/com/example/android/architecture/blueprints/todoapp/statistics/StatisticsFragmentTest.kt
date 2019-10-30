@@ -35,6 +35,7 @@ import com.example.android.architecture.blueprints.todoapp.domain.repository.Tas
 import com.example.android.architecture.blueprints.todoapp.util.DataBindingIdlingResource
 import com.example.android.architecture.blueprints.todoapp.util.monitorFragment
 import com.example.android.architecture.blueprints.todoapp.util.saveTaskBlocking
+import com.example.android.architecture.blueprints.todoapp.view.statistics.StatisticsFragment
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After

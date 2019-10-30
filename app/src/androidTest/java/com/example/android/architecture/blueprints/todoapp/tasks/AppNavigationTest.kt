@@ -43,6 +43,7 @@ import com.example.android.architecture.blueprints.todoapp.util.DataBindingIdlin
 import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingResource
 import com.example.android.architecture.blueprints.todoapp.util.monitorActivity
 import com.example.android.architecture.blueprints.todoapp.util.saveTaskBlocking
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksActivity
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

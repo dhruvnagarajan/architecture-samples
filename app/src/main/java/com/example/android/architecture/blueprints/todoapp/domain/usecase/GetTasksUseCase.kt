@@ -4,10 +4,10 @@ import com.example.android.architecture.blueprints.todoapp.data.Result
 import com.example.android.architecture.blueprints.todoapp.data.Result.Success
 import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.domain.repository.TasksRepository
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.ACTIVE_TASKS
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.ALL_TASKS
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksFilterType.COMPLETED_TASKS
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksFilterType
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksFilterType.ACTIVE_TASKS
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksFilterType.ALL_TASKS
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksFilterType.COMPLETED_TASKS
 import com.example.android.architecture.blueprints.todoapp.util.wrapEspressoIdlingResource
 
 class GetTasksUseCase(

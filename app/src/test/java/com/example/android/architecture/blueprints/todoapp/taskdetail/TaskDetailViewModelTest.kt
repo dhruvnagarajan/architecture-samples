@@ -26,6 +26,7 @@ import com.example.android.architecture.blueprints.todoapp.domain.usecase.Activa
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.CompleteTaskUseCase
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.DeleteTaskUseCase
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.GetTaskUseCase
+import com.example.android.architecture.blueprints.todoapp.view.taskdetail.TaskDetailViewModel
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Before

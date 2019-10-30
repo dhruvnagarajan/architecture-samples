@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.tasks
+package com.example.android.architecture.blueprints.todoapp.view.tasks
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,10 +28,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.android.architecture.blueprints.todoapp.EventObserver
+import com.example.android.architecture.blueprints.todoapp.entity.EventObserver
 import com.example.android.architecture.blueprints.todoapp.R
 import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.databinding.TasksFragBinding
+import com.example.android.architecture.blueprints.todoapp.tasks.TasksFragmentArgs
+import com.example.android.architecture.blueprints.todoapp.tasks.TasksFragmentDirections
 import com.example.android.architecture.blueprints.todoapp.util.getViewModelFactory
 import com.example.android.architecture.blueprints.todoapp.util.setupRefreshLayout
 import com.example.android.architecture.blueprints.todoapp.util.setupSnackbar
@@ -145,11 +147,10 @@ class TasksFragment : Fragment() {
     }
 
     private fun navigateToAddNewTask() {
-        val action = TasksFragmentDirections
-            .actionTasksFragmentToAddEditTaskFragment(
+        val action = TasksFragmentDirections.actionTasksFragmentToAddEditTaskFragment(
                 null,
                 resources.getString(R.string.add_task)
-            )
+        )
         findNavController().navigate(action)
     }
 

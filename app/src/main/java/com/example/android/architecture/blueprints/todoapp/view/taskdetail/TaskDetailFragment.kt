@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp.taskdetail
+package com.example.android.architecture.blueprints.todoapp.view.taskdetail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,10 +26,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.android.architecture.blueprints.todoapp.EventObserver
+import com.example.android.architecture.blueprints.todoapp.entity.EventObserver
 import com.example.android.architecture.blueprints.todoapp.R
 import com.example.android.architecture.blueprints.todoapp.databinding.TaskdetailFragBinding
-import com.example.android.architecture.blueprints.todoapp.tasks.DELETE_RESULT_OK
+import com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailFragmentArgs
+import com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailFragmentDirections
+import com.example.android.architecture.blueprints.todoapp.view.tasks.DELETE_RESULT_OK
 import com.example.android.architecture.blueprints.todoapp.util.getViewModelFactory
 import com.example.android.architecture.blueprints.todoapp.util.setupRefreshLayout
 import com.example.android.architecture.blueprints.todoapp.util.setupSnackbar
@@ -55,16 +57,14 @@ class TaskDetailFragment : Fragment() {
 
     private fun setupNavigation() {
         viewModel.deleteTaskEvent.observe(this, EventObserver {
-            val action = TaskDetailFragmentDirections
-                .actionTaskDetailFragmentToTasksFragment(DELETE_RESULT_OK)
+            val action = TaskDetailFragmentDirections.actionTaskDetailFragmentToTasksFragment(DELETE_RESULT_OK)
             findNavController().navigate(action)
         })
         viewModel.editTaskEvent.observe(this, EventObserver {
-            val action = TaskDetailFragmentDirections
-                .actionTaskDetailFragmentToAddEditTaskFragment(
+            val action = TaskDetailFragmentDirections.actionTaskDetailFragmentToAddEditTaskFragment(
                     args.taskId,
                     resources.getString(R.string.edit_task)
-                )
+            )
             findNavController().navigate(action)
         })
     }

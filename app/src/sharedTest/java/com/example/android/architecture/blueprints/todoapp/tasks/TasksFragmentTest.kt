@@ -43,6 +43,8 @@ import com.example.android.architecture.blueprints.todoapp.data.Task
 import com.example.android.architecture.blueprints.todoapp.data.source.FakeRepository
 import com.example.android.architecture.blueprints.todoapp.domain.repository.TasksRepository
 import com.example.android.architecture.blueprints.todoapp.util.saveTaskBlocking
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksActivity
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksFragment
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.hamcrest.CoreMatchers.allOf

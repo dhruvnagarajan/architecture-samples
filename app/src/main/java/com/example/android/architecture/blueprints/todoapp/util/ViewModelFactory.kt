@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.architecture.blueprints.todoapp
+package com.example.android.architecture.blueprints.todoapp.util
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.android.architecture.blueprints.todoapp.addedittask.AddEditTaskViewModel
+import com.example.android.architecture.blueprints.todoapp.view.addedittask.AddEditTaskViewModel
 import com.example.android.architecture.blueprints.todoapp.domain.repository.TasksRepository
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.ActivateTaskUseCase
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.ClearCompletedTasksUseCase
@@ -26,9 +26,9 @@ import com.example.android.architecture.blueprints.todoapp.domain.usecase.Delete
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.GetTaskUseCase
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.GetTasksUseCase
 import com.example.android.architecture.blueprints.todoapp.domain.usecase.SaveTaskUseCase
-import com.example.android.architecture.blueprints.todoapp.statistics.StatisticsViewModel
-import com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailViewModel
-import com.example.android.architecture.blueprints.todoapp.tasks.TasksViewModel
+import com.example.android.architecture.blueprints.todoapp.view.statistics.StatisticsViewModel
+import com.example.android.architecture.blueprints.todoapp.view.taskdetail.TaskDetailViewModel
+import com.example.android.architecture.blueprints.todoapp.view.tasks.TasksViewModel
 
 /**
  * Factory for all ViewModels.

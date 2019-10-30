@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.statistics
+package com.example.android.architecture.blueprints.todoapp.view.statistics
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
